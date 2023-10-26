@@ -1,84 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Muscles Factory</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstdapcdn.com/bootstdap/3.4.1/css/bootstdap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstdapcdn.com/bootstdap/3.4.1/js/bootstdap.min.js"></script>
-    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans"> -->
-  </head>
-  <style>
-    .text_overlap {
-            position: absolute;
-            top: 230px; 
-            left: 40px; 
-            color: black;
-            font-size: 50px; 
-            background-color: tdansparent;
-            padding: 10px; 
-            font-family: "Verdana", sans-serif;
-            font-weight: bold;
-        }
-    .image_allign {
-        position: relative;
-        top: 50px;
-        left: 20px;
-        right: 0;
-        left: 0;
-        bottom: 0;
-      }
-    .subheadings{
-      position: relative;
-      color: black;
-      top: 30px;
-      left: 20px;
-      font-size: 20px; 
-      font-family: "Verdana", sans-serif;
-      font-weight: bold;
-    }
-  </style>
-  <body>
+	<head>
+		<title>Muscles Factory</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstdapcdn.com/bootstdap/3.4.1/css/bootstdap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstdapcdn.com/bootstdap/3.4.1/js/bootstdap.min.js"></script>
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+	</head>
 
-      <nav class="navbar">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <a class="navbar-brand"   href="home.html"  >MUSCLES FACTORY</a>
-          </div>
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="home.html">HOME</a></li>
-            <li class="active"><a href="plans.html">PLANS</a></li>
-            <li class="active"><a href="trainers.html">TRAINERS</a></li>
-            <li class="active"><a href="classes.html">CLASSES</a></li>
-            <li class="active"><a href="shop.html">SHOP</a></li>
-            <li class="active"><a href="recovery.html">RECOVERY CENTER</a></li>
-            <li class="active"><a href="events.html">EVENTS</a></li>
-            <li class="active"><a href="contact.html">CONTACT US</a></li>      
-          </ul>
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="signup.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-            <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-          </ul>
-        </div>
-      </nav>
+	<body>
+		<!-- <nav class="navbar">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<a class="navbar-brand"   href="home.html"  >MUSCLES FACTORY</a>
+				</div>
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="home.html">HOME</a></li>
+					<li class="active"><a href="plans.html">PLANS</a></li>
+					<li class="active"><a href="trainers.html">TRAINERS</a></li>
+					<li class="active"><a href="classes.html">CLASSES</a></li>
+					<li class="active"><a href="shop.html">SHOP</a></li>
+					<li class="active"><a href="recovery.html">RECOVERY CENTER</a></li>
+					<li class="active"><a href="events.html">EVENTS</a></li>
+					<li class="active"><a href="contact.html">CONTACT US</a></li>      
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="signup.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+					<li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+				</ul>
+			</div>
+		</nav> -->
+		
+		<section id="header">
+			<a href="home.html"><img src="images/logo.png" class="logo" alt=""></a>
 
-      <img src="images/image1.jpg" style="height: 100%; width: 100%;" alt="some image, u add it">
-      <div class="text_overlap" >NOTHING BUT THE <br>BEST</div>
+			<div>
+				<ul id="navbar">
+					<li><a href="home.html">HOME</a></li>
+					<li><a href="plans.html">PLANS</a></li>
+					<li><a href="trainers.html">TRAINERS</a></li>
+					<li><a href="classes.html">CLASSES</a></li>
+					<li><a class="active" href="shop.html">SHOP</a></li>
+					<li><a href="recovery.html">RECOVERY CENTER</a></li>
+					<li><a href="events.html">EVENTS</a></li>
+					<li><a href="contact.html">CONTACT US</a></li>
+				</ul>
+				<ul id="navbar2">
+					<li><a href="signup.html"><span></span> Sign Up</a></li>
+					<li><a href="login.html"><span></span> Login</a></li>
+				</ul>
+			</div>
 
-      <div class="subheadings">  SALE ITEMS</div>
+		</section>
 
-      <table >
-        <tr class="image_allign">
-          <td><img  src="images/image2.png" alt="grey short sleeve shirt" width="230" height="290"></td>
-          <td><img  src="images/image3.png" alt="sky blue short sleeve shirt" width="230" height="290"></td>
-          <td><img  src="images/image4.png" alt="dark blue long sleeve shirt" width="230" height="290"></td>
-          <td><img  src="images/image5.png" alt="black backpack" width="230" height="290"></td>
-          <td><img  src="images/image6.png" alt="white gym bag" width="230" height="290"></td>
-          <td><img  src="images/image7.png" alt="light green short sleeve shirt" width="230" height="290"></td>
-        </tr>
-      </table>
-      
+		<section id="home-image">
+			<h1>NOTHING BUT THE <br>BEST</h1>
+			<p>They're called bestsellers for a reason.</p>
+			<button>SHOP NOW</button>
+		</section>
 
-  </body>
-</html>
+		<section id="products">
+			<h2>SALE ITEMS</h2>
+			<div class="products-container">
+				<div class="product">
+					<img src="images/image2.png" alt="">
+					<div class="description">
+						<h5>Basic T-Shirt</h5>
+						<h6>Regular fit</h6>
+						<div class="star">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fa-regular fa-star-half-stroke" style="color: #000000;"></i>
+						</div>
+						<h4>$36</h4>
+						<a href="#"><i class="fas fa-shopping-cart cart"></i></a>
+					</div>
+				</div>
+
+				<div class="product">
+					<img src="images/image3.png" alt="">
+					<div class="description">
+						<h5>Crest Joggers</h5>
+						<h6>Slim fit</h6>
+						<div class="star">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fa-regular fa-star" style="color: #000000;"></i>
+							<!-- <i class="fa-regular fa-star-half-stroke" style="color: #000000;"></i> -->
+						</div>
+						<h4>$38</h4>
+						<a href="#"><i class="fas fa-shopping-cart cart"></i></a>
+					</div>
+				</div>
+
+				<div class="product">
+					<img src="images/image4.png" alt="">
+					<div class="description">
+						<h5>Essential Oversized T-Shirt</h5>
+						<h6>Oversized</h6>
+						<div class="star">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fa-regular fa-star-half-stroke" style="color: #000000;"></i>
+						</div>
+						<h4>$26</h4>
+						<a href="#"><i class="fas fa-shopping-cart cart"></i></a>
+					</div>
+				</div>
+
+				<div class="product">
+					<img src="images/image5.png" alt="">
+					<div class="description">
+						<h5>Arrival Shorts</h5>
+						<h6>Slim fit</h6>
+						<div class="star">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+						</div>
+						<h4>$26</h4>
+						<a href="#"><i class="fas fa-shopping-cart cart"></i></a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="home-image2">
+			<h1>FRESH HOODIES</h1>
+			<p>Headphones on, head down, get it done kinda days.</p>
+		</section>
+
+		<section id="products">
+			<h2>HOODIES</h2>
+			<div class="products-container">
+				<div class="product">
+					<img src="images/image10.png" alt="">
+					<div class="description">
+						<h5>Raise The Bar Hoodie</h5>
+						<h6>Oversized</h6>
+						<div class="star">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+						</div>
+						<h4>$58</h4>
+						<a href="#"><i class="fas fa-shopping-cart cart"></i></a>
+					</div>
+				</div>
+
+				<div class="product">
+					<img src="images/image11.png" alt="">
+					<div class="description">
+						<h5>Heritage Washed Hoodie</h5>
+						<h6>Oversized</h6>
+						<div class="star">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fa-regular fa-star-half-stroke" style="color: #000000;"></i>
+						</div>
+						<h4>$62</h4>
+						<a href="#"><i class="fas fa-shopping-cart cart"></i></a>
+					</div>
+				</div>
+
+				<div class="product">
+					<img src="images/image12.png" alt="">
+					<div class="description">
+						<h5>Legacy Hoodie</h5>
+						<h6>Slim Fit</h6>
+						<div class="star">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+						</div>
+						<h4>$48</h4>
+						<a href="#"><i class="fas fa-shopping-cart cart"></i></a>
+					</div>
+				</div>
+
+				<div class="product">
+					<img src="images/image13.png" alt="">
+					<div class="description">
+						<h5>Crest Hoodie</h5>
+						<h6>Slim fit</h6>
+						<div class="star">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fa-regular fa-star-half-stroke" style="color: #000000;"></i>
+						</div>
+						<h4>$40</h4>
+						<a href="#"><i class="fas fa-shopping-cart cart"></i></a>
+					</div>
+				</div>
+			</div>
+		</section>
+	</body>
+	</html>
