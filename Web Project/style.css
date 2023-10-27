@@ -1,3 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+*{
+    font-family: Montserrat;
+    padding: 0;
+    margin: 0;
+}
+h1{
+    font-size: 50px;
+
+}
+
+h5{
+    /* position: relative; */
+    /* top: -30px; */
+    font-size: 20px;
+    font-weight: 100;
+}
+h6{
+    /* position: relative;
+    top: -50px; */
+    font-size: 14px;
+    font-weight: 100;
+    color: #465b52;
+}
+h4{
+    position: relative;
+    /* top: -70px; */
+}
+p{
+    font-size: 16px;
+    color: #465b52;
+    margin: 15px 0 20px 0;
+}
+
 /* =====================================nav==================================== */
 .navbar.navbar-expand-lg {
     background-color: white;
@@ -225,3 +259,174 @@
     color: white;
     text-decoration: none;
 }
+/* =======================================shop======================================= */
+
+#header{
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    /* padding: 20px 80px; */
+    background: black;
+}
+#header div{
+    display: flex;
+}
+#header img{
+    padding: 10px 0 10px 0;
+    width: 100px;
+    height: 100px;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#navbar li{
+    list-style: none;
+    padding: 0 20px;
+}
+#navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    text-align: left
+}
+#navbar li a:hover{
+    color: #ffc43a;
+    transition: 0.3s ease;
+}
+#navbar li a.active{
+    color: #574f8a;
+}
+#navbar2{
+    padding-top: 40px;
+    padding-left: 90px;
+    align-items: right;
+    justify-content: right;
+}
+#navbar2 li{
+    list-style: none;
+    padding: 0 20px;
+}
+#navbar2 li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    text-align: right;
+}
+#navbar2 li a:hover{
+    color: #ffc43a;
+    transition: 0.3s ease;
+}
+
+#home-image{
+    background-image: url(images/image1.png);
+    height: 550px;
+    max-width: 100%;
+    background-size: cover;
+    background-position: top 25% right 0;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+#home-image button{
+    background-image: url(images/image8.png);
+    color: white;
+    border: 0;
+    padding: 22px 56px 22px 56px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
+    background-color: transparent;
+}
+#home-image button:hover{
+    opacity: 0.7;
+}
+#products{
+    margin-left: 20px;
+}
+#products h2{
+    font-weight: 900;
+    font-size: 25px;
+    padding-top: 70px;
+    margin-left: 12px;
+}
+
+#products .products-container{
+    display: flex;
+    justify-content: space-between;
+    /* padding-top: 20px; */
+    flex-wrap: wrap;
+    /* padding-left: 20px; */
+}
+#products .product{
+    width: 23%;
+    height: 500px;
+    min-width: 250px;
+    padding: 10px 12px;
+    /* border: 1px solid black; */
+    cursor: pointer;
+    /* box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.03) ; */
+    margin: 15px 0;
+    position: relative;
+}
+#products .product:hover{
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.08);
+}
+#products .product img{
+    width: 100%;
+}
+#products .product .description{
+    text-align: start;    
+    padding: 10px 0;
+}
+#products .product h6{
+    padding-top: 5px;
+}
+#products .product i{
+    font-size: 14px;
+}
+#products .product h4{
+    padding-top: 7px;
+    font-size: 15px;
+}
+#products .product .cart{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-weight: 700;
+    bottom: 20px;
+    right: 10px;
+    background-color: black;
+    color:white;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+#products .product .cart:hover{
+    background-color: #ffc93e;
+    /* color: black;
+    background-color: white; */
+
+}
+
+#home-image2{
+    background-image: url(images/image9.png);
+    max-width: 100%;
+    height: 540px;
+    background-size: cover;
+    background-position: top 25% right 0;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+  
