@@ -601,3 +601,50 @@ form p a{
     background: #eaeaea;
     color: #555;
 }
+
+/* =======================================recovery======================================= */
+
+.card {
+  
+    margin: 20px;
+    overflow: hidden;
+    border-radius: 30px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover img {
+    transform: scale(1.03);
+}
+
+.card-title {
+    color: #004d99; 
+}
+
+.btn-primary {
+    background-color: #22a7f0; 
+    border: none;
+    padding-left: 20%;
+}
+
+.btn-primary:hover {
+    background-color: #149cd0;
+    
+}
+
+@media (max-width: 768px) {
+    .card {
+        margin: 10px;
+    }
+}
