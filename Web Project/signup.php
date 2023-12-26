@@ -47,11 +47,12 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Muscles Factory</title>
+		<title>BASE</title>
   		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+		<link rel="icon" type="image/png" sizes="16x16" href="images/basee.png">
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 		<link rel="stylesheet" href="style.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
@@ -68,7 +69,7 @@
 					<li><a href="classes.html">CLASSES</a></li>
 					<li><a href="shop.html">SHOP</a></li>
 					<li><a href="recovery.html">RECOVERY CENTER</a></li>
-					<li><a href="contact.html">CONTACT US</a></li>
+					<li><a href="contact.php">CONTACT US</a></li>
 				</ul>
 				<ul id="navbar2">
 					<li><a class="active" href="signup.php"><span></span> Sign Up</a></li>
@@ -93,7 +94,6 @@
 							<i class="fa-solid fa-lock"></i>
 							<input type="password" placeholder="Password" name="pass" required autocomplete="off">
 						</div>
-						<p>Forgot Password?<a href="#">Click Here!</a></p>
 					</div>
 					<div class="button-field">
 						<button type="submit" name="signUpButton" id="signUpButton">Sign Up</button>

@@ -1,192 +1,204 @@
-.sliderDiv img, .slider img {
-    width: 100%;
-    c: 100%;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat;
 }
 
-.items img {
-    cursor: pointer;
-    border-radius: 50%;
+body
+{
+    background-color: black;
+    color: #f5f5f5;
 }
 
-.item {
-    padding: 1rem;
-    overflow: hidden;
-    margin-bottom: 2rem;
+a
+{
+    text-decoration: none;
+    color: #f5f5f5;
 }
 
-.slider {
-    background-color: rgba(0, 0, 0, .5);
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    justify-content: center;
-    align-items: center;
+a:hover
+{
+    color: #69f0ae;
+}
+
+.hide
+{
     display: none;
-    animation-name: sliderApper;
-    animation-duration: 2s;
-    animation-direction: alternate;
+}
+main
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    margin: auto;
 }
 
-@keyframes sliderApper {
-    0% {
-        transform: scale(0);
-        -webkit-transform: scale(0);
-        -moz-transform: scale(0);
-        -ms-transform: scale(0);
-        -o-transform: scale(0);
-    }
-
-    100% {
-        transform: scale(1);
-        -webkit-transform: scale(1);
-        -moz-transform: scale(1);
-        -ms-transform: scale(1);
-        -o-transform: scale(1);
-    }
+.title
+{
+    font-size: 50px;
+    font-weight: bold;
+    padding: 1.5% 0;
 }
 
-.next-btn, .prev-btn {
-    position: absolute;
-    top: 50%;
+.title-info
+{
+	padding-bottom: 2%;
 }
 
-.next-btn {
-    right: 1rem;
+.form
+{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    padding: 2%;
 }
 
-.prev-btn {
-    left: 1rem;
+.input-group, .textarea-group
+{
+    padding: 1% 0;
 }
 
-.img-div {
-    background-color: #e2e2e4;
-    width: 80%;
-    height: 80%;
+input, textarea
+{
+    color: inherit;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #757575;
+    padding: 1.5%;
+    font-size: 20px;
+}
+
+input:focus, textarea:focus
+{
+    background-color: transparent;
+    outline: transparent;
+    border-bottom: 2px solid #69f0ae;
+}
+
+input::placeholder, textarea::placeholder
+{
+    color: transparent;
+}
+
+label
+{
+    color: #757575;
     position: relative;
-    padding: 2rem 4rem;
-    border-radius: 3.215rem;
+    left: 0.5em;
+    top: -2em;
+	cursor: auto;
+    transition: 0.3s ease all;
 }
 
-.home .slider .personImg {
-    width: 100%;
-    height: 100%;
-    border-radius: 1.25rem;
+input:focus ~ label, input:not(:placeholder-shown) ~ label
+{
+    top: -4em;
+    color: #69f0ae;
+    font-size: 15px;
 }
 
-.btn button {
-    border-width: 0;
-    color: white;
-    border-radius: 100%;
-    -webkit-border-radius: 100%;
-    -moz-border-radius: 100%;
-    -ms-border-radius: 100%;
-    -o-border-radius: 100%;
-    transition: all .2s;
-    -webkit-transition: all .2s;
-    -moz-transition: all .2s;
-    -ms-transition: all .2s;
-    -o-transition: all .2s;
+textarea:focus ~ label, textarea:not(:placeholder-shown) ~ label
+{
+    top: -10.5em;
+    color: #69f0ae;
+    font-size: 15px;
 }
 
-.close-btn {
-    position: absolute;
-    top: 0;
-    left: 1rem;
-}
-
-.slider .btn {
-    line-height: 2rem;
-    height: 2rem;
-    font-size: 2rem;
-    border-width: 0;
-}
-
-.btn button:hover {
-    background-color: rgba(0, 0, 0, .9);
-}
-
-.next, .prev {
-    background-color: transparent;
-}
-
-.close {
-    background-color: transparent;
-    font-size: 3rem;
-}
-
-.imgNumber {
-    background-color: rgb(33, 32, 32);
-    width: fit-content;
-    padding: .5rem;
-    border-radius: .325rem;
-    -webkit-border-radius: .325rem;
-    -moz-border-radius: .325rem;
-    -ms-border-radius: .325rem;
-    -o-border-radius: .325rem;
-    position: absolute;
-    top: 2rem;
-    left: 2rem;
-    color: white;
-}
-
-.slider {
-    z-index: 999;
-}
-
-    .slider .col-8 {
-        height: 100%;
-        display: flex;
-        align-items: center;
-    }
-
-.info {
-    border: 2px #b8c5dc solid;
-    width: 100%;
-    height: fit-content;
+.button-div
+{
     display: flex;
     justify-content: center;
-    flex-direction: column;
-    padding: 2rem 1rem;
-    border-radius: 1.25rem;
-    background-color: #dae1ed;
 }
 
-.infoItem {
-    color: #2e5231;
-    font-size: 1.5rem;
-    margin-bottom: .25rem;
+button
+{
+    padding: 2%;
+    width: 50%;
+    border: 1px solid;
+    border-color: #212121;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 18px;
+    background-color: black;
+    color: inherit;
+    box-shadow: 0 0 10px #212121;
 }
 
-    .infoItem span {
-        margin-left: 2rem;
+button:hover
+{
+    background-color: #424242;
+    color: #69f0ae;
+    cursor: pointer;
+}
+
+
+/* Media queries */
+
+@media screen and (max-width: 1200px)
+{
+    .form
+    {
+        width: 70%;
     }
-/* ==================================home============================== */
-.home {
 }
 
-    .home .content .overlay {
-        position: absolute;
-        left: 0;
-        right: 0;
-        height: 100%;
-        background-color: rgba(172, 172, 172, 0.441);
-        z-index: 0;
-        overflow: auto;
+@media screen and (max-width: 680px)
+{
+    .form
+    {
+		width: 90%;
     }
-
-.sliderDiv {
-    z-index: 9;
-    position: relative;
-    overflow: visible;
 }
 
-.footerItem a {
-    color: white;
-    text-decoration: none;
-}
+@media screen and (max-width: 500px)
+{
+	.title
+	{
+		font-size: 40px;
+		padding-top: 6%;
+	}
 
-.singUp {
-    display: block;
+	.title-info
+	{
+		font-size: 13px;
+	}
+	
+	.form
+	{
+		padding: 6% 4%;
+		padding-top: 15%;
+	}
+
+	.input-group, .textarea-group
+    {
+		padding: 3% 0;
+	}
+	
+	input, textarea
+	{
+		font-size: 15px;
+	}
+
+	input:focus ~ label, input:not(:placeholder-shown) ~ label
+	{
+		top: -3.5em;
+		left: 0.1em;
+	}
+	
+	textarea:focus ~ label, textarea:not(:placeholder-shown) ~ label
+	{
+		top: -8.5em;
+		left: 0.2em;
+    }
+    
+    button
+    {
+        font-size: 15px;
+    }
 }
